@@ -1,0 +1,338 @@
+{
+	"afterEach": {
+		"prefix": "ae",
+		"body": "\nafterEach(() => {\n\t$1\n});\n\t",
+		"description": "afterEach function is called once after each spec",
+		"scope": "source.js"
+	},
+	"beforeEach": {
+		"prefix": "be",
+		"body": "\nbeforeEach(() => {\n\t$1\n});\n\t",
+		"description": "beforeEach function is called once before each spec",
+		"scope": "source.js"
+	},
+	"callsAll": {
+		"prefix": "ca",
+		"body": "${1:spy}.calls.all()\n\t",
+		"description": "returns the context (the this) and arguments passed all calls",
+		"scope": "source.js"
+	},
+	"callsAllArgs": {
+		"prefix": "caa",
+		"body": "${1:spy}.calls.allArgs()\n\t",
+		"description": "returns the arguments to all calls",
+		"scope": "source.js"
+	},
+	"callsAny": {
+		"prefix": "ca",
+		"body": "${1:spy}.calls.any()\n\t",
+		"description": "returns false if the spy has not been called at all, and then true once at least one call happens",
+		"scope": "source.js"
+	},
+	"callsArgsFor": {
+		"prefix": "caf",
+		"body": "${1:spy}.calls.argsFor(${2:call number})\n\t",
+		"description": "returns the arguments passed to call number index",
+		"scope": "source.js"
+	},
+	"callsCount": {
+		"prefix": "cc",
+		"body": "${1:spy}.calls.count()\n\t",
+		"description": "returns the number of times the spy was called",
+		"scope": "source.js"
+	},
+	"callsFirst": {
+		"prefix": "cf",
+		"body": "${1:spy}.calls.first()\n\t",
+		"description": "returns the context (the this) and arguments for the first call",
+		"scope": "source.js"
+	},
+	"callsMostRescent": {
+		"prefix": "cmr",
+		"body": "${1:spy}.calls.mostRecent()\n\t",
+		"description": "returns the context (the this) and arguments for the most recent call",
+		"scope": "source.js"
+	},
+	"callsReset": {
+		"prefix": "cr",
+		"body": "${1:spy}.calls.reset()\n\t",
+		"description": "clears all tracking for a spy",
+		"scope": "source.js"
+	},
+	"createSpy": {
+		"prefix": "cs",
+		"body": "jasmine.createSpy('${1:name}');$0",
+		"description": "creates a “bare” spy",
+		"scope": "source.js"
+	},
+	"createSpyObject": {
+		"prefix": "cso",
+		"body": "jasmine.createSpyObj('${1:spy name}', ['${2:method name}'$3]);$0",
+		"description": "creates a mock with multiple spies",
+		"scope": "source.js"
+	},
+	"describe": {
+		"prefix": "desc",
+		"body": "\ndescribe('${1:Name of the group}', () => {\n\t$2\n});\n\t",
+		"description": "creates a suite of tests",
+		"scope": "source.js"
+	},
+	"expext": {
+		"prefix": "exp",
+		"body": "expect($1)$0",
+		"description": "takes a value, called the actual.",
+		"scope": "source.js"
+	},
+	"focusDescribe": {
+		"prefix": "fdesc",
+		"body": "\nfdescribe('${1:Name of the group}', () => {\n    $2\n});\n    ",
+		"description": "focused describe",
+		"scope": "source.js"
+	},
+	"focusedIt": {
+		"prefix": "fit",
+		"body": "\nfit('${1:should behave...}', () => {\n    $2\n});\n    ",
+		"description": "focused it",
+		"scope": "source.js"
+	},
+	"it": {
+		"prefix": "it",
+		"body": "\nit('${1:should behave...}', () => {\n\t$2\n});\n\t",
+		"description": "creates a test method",
+		"scope": "source.js"
+	},
+	"any": {
+		"prefix": "any",
+		"body": "jasmine.any($1)$0",
+		"description": "akes a constructor or “class” name as an expected value. It returns true if the constructor matches the constructor of the actual value",
+		"scope": "source.js"
+	},
+	"objectContaining": {
+		"prefix": "oc",
+		"body": "jasmine.objectContaining('${1:key}': ${2:value}\\}})$0",
+		"description": "when an expectation only cares about certain key/value pairs in the actual",
+		"scope": "source.js"
+	},
+	"notToBe": {
+		"prefix": "nb",
+		"body": "expect($1).not.toBe($2);$0\n\t",
+		"description": "expects an object - value not to be equal",
+		"scope": "source.js"
+	},
+	"notToBleCloseTo": {
+		"prefix": "nct",
+		"body": "expect($1).not.toBeCloseTo(${2:number}, ${3:delta});$0\n\t",
+		"description": "expects a value not to be close to another value",
+		"scope": "source.js"
+	},
+	"notToBeDefined": {
+		"prefix": "nd",
+		"body": "expect($1).not.toBeDefined();$0\n\t",
+		"description": "expects the argument is not defined",
+		"scope": "source.js"
+	},
+	"notToBeFalsef": {
+		"prefix": "nf",
+		"body": "expect($1).not.toBeFalsy();$0\n\t",
+		"description": "expects the argument not to be false",
+		"scope": "source.js"
+	},
+	"notToBeGreaterThan": {
+		"prefix": "ngt",
+		"body": "expect($1).not.toBeGreaterThan($2);$0\n\t",
+		"description": "expects the argument not to be greater than",
+		"scope": "source.js"
+	},
+	"notToBeLessThanlt": {
+		"prefix": "nlt",
+		"body": "expect($1).not.toBeLessThan($2);$0\n\t",
+		"description": "expects the argument not to be less than",
+		"scope": "source.js"
+	},
+	"notToBeNull": {
+		"prefix": "nn",
+		"body": "expect($1).not.toBeNull();$0\n\t",
+		"description": "expects the argument not to be null",
+		"scope": "source.js"
+	},
+	"notToBeTruthy": {
+		"prefix": "nt",
+		"body": "expect($1).not.toBeTruthy();$0\n\t",
+		"description": "expects the argument not to be truthy",
+		"scope": "source.js"
+	},
+	"notToBeUndefined": {
+		"prefix": "nu",
+		"body": "expect($1).not.toBeUndefined();$0\n\t",
+		"description": "expects the argument not to be undefined",
+		"scope": "source.js"
+	},
+	"notToContain": {
+		"prefix": "nc",
+		"body": "expect(${1:array}).not.toContain(${2:item});$0\n\t",
+		"description": "expects the array does not contain the argument",
+		"scope": "source.js"
+	},
+	"notToEqual": {
+		"prefix": "ne",
+		"body": "expect($1).not.toEqual($2);$0\n\t",
+		"description": "expects the first argument not to be equal to the second one",
+		"scope": "source.js"
+	},
+	"notToMatch": {
+		"prefix": "nm",
+		"body": "expect($1).not.toMatch($2);$0\n\t",
+		"description": "expects the first argument not to match the second one",
+		"scope": "source.js"
+	},
+	"notToThrow": {
+		"prefix": "nt",
+		"body": "expect($1).not.toThrow();$0\n\t",
+		"description": "expects the argument not to throw",
+		"scope": "source.js"
+	},
+	"spyOnAndCallFake": {
+		"prefix": "scf",
+		"body": "spyOn(${1:object}, '${2:method}').and.callFake(${3:() => \\{\n    $4\n\\}});$0\n    ",
+		"description": "all calls to the spy will delegate to the supplied function",
+		"scope": "source.js"
+	},
+	"spyOnAndCallThrough": {
+		"prefix": "sct",
+		"body": "spyOn(${1:object}, '${2:method}').and.callThrough();$0",
+		"description": "tracks all calls to it and delegates to the actual implementation",
+		"scope": "source.js"
+	},
+	"spyOnAndReturnValue": {
+		"prefix": "srv",
+		"body": "spyOn(${1:object}, '${2:method}').and.returnValue('${3:value}');$0",
+		"description": "all calls to the function will return a specific value",
+		"scope": "source.js"
+	},
+	"spyOnAndStub": {
+		"prefix": "ss",
+		"body": "spyOn(${1:object}, '${2:method}').and.stub();$0",
+		"description": "The original stubbing behavior is returned at any time",
+		"scope": "source.js"
+	},
+	"spyOnAndThrowError": {
+		"prefix": "ste",
+		"body": "spyOn(${1:object}, '${2:method}').and.throwError('${3:error}');$0",
+		"description": "all calls to the spy will throw the specified value as an error",
+		"scope": "source.js"
+	},
+	"spyOn": {
+		"prefix": "so",
+		"body": "spyOn(${1:object}, '${2:method}')$3;$0\n\t",
+		"description": "creates a spy for the specified method",
+		"scope": "source.js"
+	},
+	"toBe": {
+		"prefix": "tb",
+		"body": "expect($1).toBe($2);$0\n\t",
+		"description": "expects the first argument to be equal with the second one",
+		"scope": "source.js"
+	},
+	"toBeCloseTo": {
+		"prefix": "tbct",
+		"body": "expect($1).toBeCloseTo(${2:number}, ${3:delta});$0\n\t",
+		"description": "expects the first argument to be close to the second one base on the delta",
+		"scope": "source.js"
+	},
+	"toBeDefined": {
+		"prefix": "tbd",
+		"body": "expect($1).toBeDefined();$0\n\t",
+		"description": "expects the argument is defined",
+		"scope": "source.js"
+	},
+	"toBeFalsy": {
+		"prefix": "tbf",
+		"body": "expect($1).toBeFalsy();$0\n\t",
+		"description": "expects the argument is falsy",
+		"scope": "source.js"
+	},
+	"toBeGreaterThan": {
+		"prefix": "tbgt",
+		"body": "expect($1).toBeGreaterThan($2);$0\n\t",
+		"description": "expects the argument is greater than",
+		"scope": "source.js"
+	},
+	"toBeLessThan": {
+		"prefix": "tblt",
+		"body": "expect($1).toBeLessThan($2);$0\n\t",
+		"description": "expects the argument is less than",
+		"scope": "source.js"
+	},
+	"toBeNull": {
+		"prefix": "tbn",
+		"body": "expect($1).toBeNull();$0\n\t",
+		"description": "expects the argument is null",
+		"scope": "source.js"
+	},
+	"toBeTruthy": {
+		"prefix": "tbt",
+		"body": "expect($1).toBeTruthy();$0\n\t",
+		"description": "expects the argument is truthy",
+		"scope": "source.js"
+	},
+	"toBeUndefined": {
+		"prefix": "tbu",
+		"body": "expect($1).toBeUndefined();$0\n\t",
+		"description": "expects the argument is undefined",
+		"scope": "source.js"
+	},
+	"toContain": {
+		"prefix": "tc",
+		"body": "expect(${1:array}).toContain(${2:item});$0\n\t",
+		"description": "expects the array contains the argument",
+		"scope": "source.js"
+	},
+	"toEqual": {
+		"prefix": "te",
+		"body": "expect($1).toEqual($2);$0\n\t",
+		"description": "expects the first argument to be equal with the second one",
+		"scope": "source.js"
+	},
+	"toHaveBeenCalled": {
+		"prefix": "thbc",
+		"body": "expect($1).toHaveBeenCalled();$0\n\t",
+		"description": "returns true if the spy was called",
+		"scope": "source.js"
+	},
+	"toHaveBeenCalledWith": {
+		"prefix": "thbcw",
+		"body": "expect($1).toHaveBeenCalledWith(${2:params});$0\n\t",
+		"description": "he toHaveBeenCalled matcher will return true if the argument list matches any of the recorded calls to the spy",
+		"scope": "source.js"
+	},
+	"toMatch": {
+		"prefix": "tm",
+		"body": "expect($1).toMatch($2);$0\n\t",
+		"description": "returns true if the argument matches the second value",
+		"scope": "source.js"
+	},
+	"toThrow": {
+		"prefix": "tt",
+		"body": "expect($1).toThrow();$0\n\t",
+		"description": "expects that the specified method will throw",
+		"scope": "source.js"
+	},
+	"toThrowError": {
+		"prefix": "tte",
+		"body": "expect($1).toThrowError(${2:error});$0",
+		"description": "expects that the specified method will throw with the specified error",
+		"scope": "source.js"
+	},
+	"xDescribe": {
+		"prefix": "xdesc",
+		"body": "\nxdescribe('${1:Name of the group}', () => {\n\t$2\n});\n\t",
+		"description": "these suites and any specs inside them are skipped when run and thus their results will not appear in the results",
+		"scope": "source.js"
+	},
+	"xIt": {
+		"prefix": "xit",
+		"body": "\nxit('${1:should behave...}', () => {\n\t$2\n});\n\t",
+		"description": "pending specs do not run, but their names will show up in the results as pending",
+		"scope": "source.js"
+	}
+}
