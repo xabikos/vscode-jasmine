@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "displayName": "Jasmine code snippets",
   "publisher": "xabikos",
+  "icon": "images/jasmine.png",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
@@ -19,7 +20,7 @@
     "snippets": [
       {
         "language": "javascript",
-		"path": "./snippets/snippets.json"
+		  "path": "./snippets/snippets.json"
 	  }
     ]
   }
