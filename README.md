@@ -75,6 +75,8 @@ Below is a list of all available snippets and the triggers of each one. The **�
 |`so→`     | spyOn |
 |`sct→`    | spyOn.and.callThrough |
 |`scf→`    | spyOn.and.callFake |
+|`spg→`     | spyOnProperty($obj,'$property', 'get') |
+|`sps→`     | spyOnProperty($obj,'$property', 'set') |
 |`srv→`    | spyOn.and.returnValue |
 |`ss→`     | spyOn.and.stub |
 |`ste→`    | spyOn.and.throwError |

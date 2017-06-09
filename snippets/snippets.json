@@ -221,6 +221,18 @@
 		"description": "all calls to the spy will throw the specified value as an error",
 		"scope": "source.js"
 	},
+	"spyOnProperty get": {
+		"prefix": "spg",
+		"body": "spyOnProperty(${1:object}, '${2:method}', 'get')$3;$0",
+		"description": "Install a spy on a property onto an existing object with get accessType",
+		"scope": "source.js"
+	},
+	"spyOnProperty set": {
+		"prefix": "sps",
+		"body": "spyOnProperty(${1:object}, '${2:method}', 'set')$3;$0",
+		"description": "Install a spy on a property onto an existing object with set accessType",
+		"scope": "source.js"
+	},
 	"spyOn": {
 		"prefix": "so",
 		"body": "spyOn(${1:object}, '${2:method}')$3;$0\n\t",
