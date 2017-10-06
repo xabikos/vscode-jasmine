@@ -89,7 +89,7 @@
 		"description": "creates a suite of tests",
 		"scope": "source.js"
 	},
-	"expext": {
+	"expect": {
 		"prefix": "exp",
 		"body": "expect($1)$0",
 		"description": "takes a value, called the actual.",
