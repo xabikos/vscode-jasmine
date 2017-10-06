@@ -1,13 +1,13 @@
 {
 	"afterEach": {
 		"prefix": "ae",
-		"body": "afterEach(() => {\n\t$1\n});",
+		"body": "afterEach(function() {\n\t$1\n});",
 		"description": "afterEach function is called once after each spec",
 		"scope": "source.js"
 	},
 	"beforeEach": {
 		"prefix": "be",
-		"body": "beforeEach(() => {\n\t$1\n});",
+		"body": "beforeEach(function() {\n\t$1\n});",
 		"description": "beforeEach function is called once before each spec",
 		"scope": "source.js"
 	},
@@ -91,13 +91,13 @@
 	},
 	"focusedIt": {
 		"prefix": "fit",
-		"body": "fit('${1:should behave...}', () => {\n    $2\n});\n    ",
+		"body": "fit('${1:should behave...}', function() {\n    $2\n});\n    ",
 		"description": "focused it",
 		"scope": "source.js"
 	},
 	"it": {
 		"prefix": "it",
-		"body": "it('${1:should behave...}', () => {\n\t$2\n});",
+		"body": "it('${1:should behave...}', function() {\n\t$2\n});",
 		"description": "creates a test method",
 		"scope": "source.js"
 	},
@@ -343,7 +343,7 @@
 	},
 	"xIt": {
 		"prefix": "xit",
-		"body": "xit('${1:should behave...}', () => {\n\t$2\n});",
+		"body": "xit('${1:should behave...}', function() {\n\t$2\n});",
 		"description": "pending specs do not run, but their names will show up in the results as pending",
 		"scope": "source.js"
 	}
