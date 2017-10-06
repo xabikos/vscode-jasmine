@@ -97,13 +97,13 @@
 	},
 	"focusDescribe": {
 		"prefix": "fdesc",
-		"body": "fdescribe('${1:Name of the group}', () => {\n    $2\n});\n    ",
+		"body": "fdescribe('${1:Name of the group}', () => {\n\t$2\n});",
 		"description": "focused describe",
 		"scope": "source.js"
 	},
 	"focusedIt": {
 		"prefix": "fit",
-		"body": "fit('${1:should behave...}', function() {\n    $2\n});\n    ",
+		"body": "fit('${1:should behave...}', function() {\n\t$2\n});",
 		"description": "focused it",
 		"scope": "source.js"
 	},
@@ -205,7 +205,7 @@
 	},
 	"spyOnAndCallFake": {
 		"prefix": "scf",
-		"body": "spyOn(${1:object}, '${2:method}').and.callFake(${3:() => \\{\n    $4\n\\}});$0\n    ",
+		"body": "spyOn(${1:object}, '${2:method}').and.callFake(${3:() => {\n\t$4\n}});$0",
 		"description": "all calls to the spy will delegate to the supplied function",
 		"scope": "source.js"
 	},
