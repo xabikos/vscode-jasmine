@@ -43,7 +43,7 @@
 	},
 	"callsArgsFor": {
 		"prefix": "caf",
-		"body": "${1:spy}.calls.argsFor(${2:call number})",
+		"body": "${1:spy}.calls.argsFor(${2:i})",
 		"description": "returns the arguments passed to call number index",
 		"scope": "source.js"
 	},
