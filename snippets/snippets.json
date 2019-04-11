@@ -5,10 +5,22 @@
 		"description": "afterEach function is called once after each spec",
 		"scope": "source.js"
 	},
+	"afterAll": {
+		"prefix": "aa",
+		"body": "afterAll(() => {\n\t$1\n});",
+		"description": "afterAll function is called once after the full spec runs",
+		"scope": "source.js"
+	},
 	"beforeEach": {
 		"prefix": "be",
 		"body": "beforeEach(() => {\n\t$1\n});",
 		"description": "beforeEach function is called once before each spec",
+		"scope": "source.js"
+	},
+	"beforeAll": {
+		"prefix": "ba",
+		"body": "beforeall(() => {\n\t$1\n});",
+		"description": "beforeAll function is called once before the full spec runs",
 		"scope": "source.js"
 	},
 	"callsAll": {
@@ -193,7 +205,7 @@
 	},
 	"spyOnAndCallFake": {
 		"prefix": "scf",
-		"body": "spyOn(${1:object}, '${2:method}').and.callFake(${3:() => \\{\n    $4\n\\}});$0\n    ",
+		"body": "spyOn(${1:object}, '${2:method}').and.callFake(${3:() => {\n    ${4:throw \"notImplemented\"}\n\\}});$0\n",
 		"description": "all calls to the spy will delegate to the supplied function",
 		"scope": "source.js"
 	},
