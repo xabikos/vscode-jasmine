@@ -1,7 +1,7 @@
 {
   "name": "JasmineSnippets",
   "description": "Code snippets for JavaScript Jasmine test framework in ES6 syntax",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "displayName": "Jasmine code snippets",
   "publisher": "xabikos",
   "icon": "images/jasmine.png",
