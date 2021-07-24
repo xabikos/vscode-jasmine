@@ -10,13 +10,14 @@ This extension contains code snippets for [Jasmine][jasmine] test framework and 
 
 ## Installation
 
-In order to install an extension you need to launch the Command Pallete (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
+In order to install an extension you need to launch the Command Palette (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
 There you have either the option to show the already installed snippets or install new ones.
 
 ## Supported languages (file extensions)
 * JavaScript (.js)
 * TypeScript (.ts)
 * TypeScript React (.tsx)
+* JavaScript React (.jsx)
 
 ## Snippets
 
@@ -33,7 +34,9 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `xit→`       | xit method |
 | `fit→`       | fit method |
 | `ae→`        | after each method |
+| `aa→`        | after all methods |
 | `be→`        | before each method |
+| `ba→`        | before all methods |
 
 ### Expectations
 | Trigger  | Content |
