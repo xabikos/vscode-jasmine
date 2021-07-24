@@ -5,10 +5,22 @@
 		"description": "afterEach function is called once after each spec",
 		"scope": "source.js"
 	},
+	"afterAll": {
+		"prefix": "aa",
+		"body": "afterAll(() => {\n\t$1\n});",
+		"description": "afterAll function is called once after the full spec runs",
+		"scope": "source.js"
+	},
 	"beforeEach": {
 		"prefix": "be",
 		"body": "beforeEach(() => {\n\t$1\n});",
 		"description": "beforeEach function is called once before each spec",
+		"scope": "source.js"
+	},
+	"beforeAll": {
+		"prefix": "ba",
+		"body": "beforeall(() => {\n\t$1\n});",
+		"description": "beforeAll function is called once before the full spec runs",
 		"scope": "source.js"
 	},
 	"callsAll": {
