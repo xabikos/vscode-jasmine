@@ -29,6 +29,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `xdesc→`     | xdescribe method |
 | `fdesc→`     | fdescribe method |
 | `it→`        | it method |
+| `ait→`       | async it method |
 | `xit→`       | xit method |
 | `fit→`       | fit method |
 | `ae→`        | after each method |

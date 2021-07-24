@@ -101,6 +101,12 @@
 		"description": "creates a test method",
 		"scope": "source.js"
 	},
+	"ait": {
+		"prefix": "ait",
+		"body": "it('${1:should behave...}', async () => {\n\t$2\n});",
+		"description": "creates an async test method",
+		"scope": "source.js"
+	},
 	"any": {
 		"prefix": "any",
 		"body": "jasmine.any($1)$0",
