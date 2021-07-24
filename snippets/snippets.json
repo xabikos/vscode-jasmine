@@ -211,7 +211,7 @@
 	},
 	"spyOnAndCallFake": {
 		"prefix": "scf",
-		"body": "spyOn(${1:object}, '${2:method}').and.callFake(${3:() => \\{\n    $4\n\\}});$0\n    ",
+		"body": "spyOn(${1:object}, '${2:method}').and.callFake(${3:() => {\n    ${4:throw \"notImplemented\"}\n\\}});$0\n",
 		"description": "all calls to the spy will delegate to the supplied function",
 		"scope": "source.js"
 	},
