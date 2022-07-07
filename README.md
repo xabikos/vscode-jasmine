@@ -32,7 +32,9 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `xit→`       | xit method |
 | `fit→`       | fit method |
 | `ae→`        | after each method |
+| `aa→`        | after all methods |
 | `be→`        | before each method |
+| `ba→`        | before all methods |
 
 ### Expectations
 | Trigger  | Content |
